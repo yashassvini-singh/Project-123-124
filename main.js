@@ -1,3 +1,7 @@
+leftWrist_x = 0;
+rightWrist_x = 0;
+difference = 0;
+
 function setup(){
     video = createCapture(VIDEO);
     video.size(400,400);
@@ -12,6 +16,10 @@ function setup(){
 
 function draw(){
     background("#9FE2BF");
+    document.getElementById("font_size").innerHTML = "Font Size Of The Text Will Be = "+difference+"px";
+    textSize(difference);
+    fill("Black");
+    text('Yashassvini',50,400);
 }
 
 function modelDone(){
